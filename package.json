@@ -1,0 +1,15 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "application/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "start-web-1": "yarn workspace web-1 start",
+    "start-web-2": "yarn workspace web-2 start"
+  }
+}
