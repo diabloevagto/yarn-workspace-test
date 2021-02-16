@@ -9,7 +9,16 @@
     "packages/*"
   ],
   "scripts": {
-    "start-web-1": "yarn workspace web-1 start",
-    "start-web-2": "yarn workspace web-2 start"
+    "start-web": "yarn workspace react-web start",
+    "start-ios-app": "yarn workspace react-native-app run start-ios-dev",
+    "start-android-app": "yarn workspace react-native-app run start-android-dev"
+  },
+  "devDependencies": {
+    "@react-native-community/eslint-config": "^2.0.0",
+    "eslint": "^7.20.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-sort-imports-es6-autofix": "^0.5.0"
   }
 }

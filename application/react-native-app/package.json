@@ -1,0 +1,20 @@
+{
+  "name": "react-native-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start-ios-dev": "react-native run-ios",
+    "start-android-dev": "react-native run-android",
+    "start-ios-release": "react-native run-ios --configuration Release",
+    "start-android-release": "react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "metro-react-native-babel-preset": "^0.59.0"
+  }
+}
