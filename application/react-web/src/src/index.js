@@ -1,8 +1,9 @@
 import { Router } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
+import { WrapContext } from 'packages-store';
+import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { WrapContext } from 'src/store';
 import Auth from 'src/page/Auth';
 import GlobalStyles from 'src/style/GlobalStyles';
 import history from 'src/utils/history';

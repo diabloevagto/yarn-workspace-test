@@ -22,17 +22,11 @@ const reducer = (state, action) => {
 const WrapContext = (props) => {
   const [store, dispatch] = useReducer(reducer, initStore);
 
-  return (
-    <ContextStore.Provider
-      value={{
-        ...store,
-        dispatch,
-      }}
-    >
-      {props.children}
-    </ContextStore.Provider>
+  return React.createElement(
+    ContextStore.Provider,
+    { value: { ...store, dispatch } },
+    props.children,
   );
 };
 
-export default ContextStore;
-export { WrapContext };
+export { ContextStore, WrapContext };

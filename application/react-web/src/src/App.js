@@ -1,7 +1,8 @@
 import { Link, Route, Switch } from 'react-router-dom';
+import { useStore } from 'packages-hooks';
+import React from 'react';
 
 import { DEFAULT_NAME } from 'src/constants';
-import useStore from 'src/hooks/useStore';
 
 export default function App() {
   const { userId } = useStore();

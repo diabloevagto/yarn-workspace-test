@@ -1,3 +1,3 @@
-import useCount from "./src/useCount";
+import useStore from './src/useStore';
 
-export { useCount };
+export { useStore };

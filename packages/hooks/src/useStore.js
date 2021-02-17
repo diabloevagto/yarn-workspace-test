@@ -1,6 +1,5 @@
+import { ContextStore } from 'packages-store';
 import { useContext } from 'react';
-
-import ContextStore from 'src/store';
 
 export default function useStore() {
   const store = useContext(ContextStore);

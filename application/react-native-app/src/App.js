@@ -1,7 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { useStore } from 'packages-hooks';
 import React from 'react';
-
-import useStore from 'src/hooks/useStore';
 
 export default function App() {
   const { userId } = useStore();

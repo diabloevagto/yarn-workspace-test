@@ -1,8 +1,8 @@
 import { Button, StyleSheet, TextInput, View } from 'react-native';
+import { useStore } from 'packages-hooks';
 import React, { useCallback, useEffect, useState } from 'react';
 
 import Loading from 'src/components/Loading';
-import useStore from 'src/hooks/useStore';
 
 export default function Auth(props) {
   const [init, setInit] = useState(false);
